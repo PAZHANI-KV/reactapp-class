@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Content from "./Content";
+
+// Lets create a Grocery list creating app to learn about React concepts
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+<div>
+{/* Importing Header component inside the App component and declaring it in the below line */}
+<Header />
+<Content />
+
+
+</div>
   );
 }
 
