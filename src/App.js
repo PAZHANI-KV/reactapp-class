@@ -1,5 +1,7 @@
 import Header from "./Header";
-import Content from "./Content";
+import Footer from "./Footer";
+import Contents from "./Contents";
+
 
 // Lets create a Grocery list creating app to learn about React concepts
 
@@ -7,10 +9,11 @@ function App() {
 
   return (
 
-<div>
+<div className="App">
 {/* Importing Header component inside the App component and declaring it in the below line */}
 <Header />
-<Content />
+<Contents/>
+<Footer/>
 
 
 </div>
