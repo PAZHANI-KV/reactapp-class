@@ -7,12 +7,16 @@ import React from 'react'
   color: "white"
 } */
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header /* style={headerStyle} */ >
-        <h1>To do List</h1>
+        <h1>{props.title}</h1> {/* The prop drilling is explained here. The prop title is borrowed here from app.js file */}
     </header>
   )
 }
 
+Header.defaultProps = {
+  title: "To do List!"
+}  // This is default prop for Header file. If the above prop which is passed from app.js to this file has some error to render, then this default title will be rendered instead for the header file!
+ 
 export default Header
