@@ -4,3 +4,4 @@
 
 //useState Definition: Imagine a number keep on increasing for everytime we refresh the webpage. Here, the whole website is reloading everytime just to increase the value of the number which is inside an element or an operator. Here, if we use the useState in that particular element or operator, only that particular element or operator will get reloaded everytime when the number increases and the whole website need not to be reloaded again and again. This helps in reducing the buffering time and the risk of app crashes when reloading a large whole web page just for a small simple execution.
 
+//controlled components: 

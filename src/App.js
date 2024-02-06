@@ -17,6 +17,8 @@ function App() {
     { id: 3, checked: false, item: "Read about AI" },
   ]);
 
+const [newItem, setNewItem] = useState('')
+
   const handleCheckkk = (id) => {
     const listItems = items.map((item) => item.id===id ? {...item, checked: !item.checked} : item)
     setItems(listItems)
@@ -31,12 +33,20 @@ function App() {
     
     }
 
+    const handleSubmit = (e) => {
+      console.log("submitted")
+    }
+
   return (
 
 <div className="App">
 {/* Importing Header component inside the App component and declaring it in the below line */}
 <Header title = "List to do!"/> {/* The title property mentioned here is to explain the concept of prop drilling */}
-<AddItem/>
+<AddItem
+newItem = {newItem}
+setNewItem = {setNewItem}
+handleSubmit = {handleSubmit} 
+/>
 <Contents
 items = {items}
 handleCheckkk = {handleCheckkk}
